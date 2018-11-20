@@ -14,9 +14,9 @@ var draw = 0;
 $("button").click(function(event) {
   var play_you = this.getAttribute("value");
   $("#play_you").text(play_you);
-  var play_machine = computer_move();
+  computer_move();
   compare(play_you, play_machine);
-})
+});
 
 /* generate a move by the computer */
 
@@ -49,6 +49,18 @@ function compare(you, machine){
 
   if ((you == "Scissors") && (machine =="Paper")) {
     verdict = 'win';
+  }
+
+  if ((you == "Scissors") && (machine == "Rock")) {
+    verdict = 'lose';
+  }
+
+  if ((you == "Rock") && (machine =="Paper")) {
+    verdict = 'lose';
+  }
+
+  if ((you == "Paper") && (machine =="Scissors")) {
+    verdict = 'lose';
   }
 
 switch (verdict) {
