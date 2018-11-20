@@ -83,3 +83,8 @@ $("#verdict").text(verdict);
 played++;
 $("#games_played").text(played);
 }
+
+$("#reset").click(function(event) {
+  $(".option").empty();
+  $(".outcome").empty();
+});
