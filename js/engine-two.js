@@ -11,7 +11,7 @@ var draw = 0;
 
 /* Listen for the button clicks */
 
-$("button").click(function(event) {
+$(".user_click").click(function(event) {
   var play_you = this.getAttribute("value");
   $("#play_you").text(play_you);
   computer_move();
@@ -84,7 +84,17 @@ played++;
 $("#games_played").text(played);
 }
 
-$("#reset").click(function(event) {
-  $(".option").empty();
-  $(".outcome").empty();
+$("#reset").click(function() {
+ played = 0;
+ won = 0;
+ lost = 0;
+ draw = 0;
+ played = 0;
+$('#play_you').empty();
+$('#play_machine').empty();
+$('#verdict').empty();
+$('#game_won').empty();
+$('#game_lost').empty();
+$('#game_draw').empty();
+$('#games_played').empty();
 });

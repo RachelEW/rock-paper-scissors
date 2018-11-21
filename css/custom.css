@@ -1,0 +1,18 @@
+.jumbotron {
+  background:#7563C6;
+}
+
+#choices {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#outcomes {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.current-move {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
