@@ -1,5 +1,19 @@
+body {
+  font-family: 'Titillium Web', sans-serif;
+}
+
 .jumbotron {
-  background:#7563C6;
+  background-image: url("../images/hands-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0;
+  min-height: 600px;
+  max-width: 100%;
+}
+
+.jumbotron h1 {
+  padding-top: 30px;
+  font-size: 60px;
 }
 
 #choices {
@@ -15,4 +29,50 @@
 .current-move {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+button {
+  padding: 20px;
+  background-color: #4D9078;
+  border-radius: 5px;
+  border: black;
+  font-size: 26px;
+}
+
+button:hover{
+    font-weight: bold;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+#reset {
+  background-color: #B4436C;
+}
+
+.current-move {
+  background-color: #5FAD56;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+#results {
+  background-color: #F78154;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 18px;
+}
+
+#verdict {
+  color: #B4436C;
+  font-size: 40px;
+  font-weight: bold;
 }
