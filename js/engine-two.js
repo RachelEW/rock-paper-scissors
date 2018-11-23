@@ -18,6 +18,12 @@ $(".user_click").click(function(event) {
   compare(play_you, play_machine);
 });
 
+/* changing color of buttons on click */
+$(".user_click").click(function() {
+  $(".user_click").css('background-color', '#4D9078');
+  $(this).css('background-color', '#F2C14E');
+});
+
 /* generate a move by the computer */
 
 function computer_move() {
