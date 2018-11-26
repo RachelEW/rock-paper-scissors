@@ -103,4 +103,5 @@ $('#game_won').empty();
 $('#game_lost').empty();
 $('#game_draw').empty();
 $('#games_played').empty();
+$(".user_click").css('background-color', '#4D9078');
 });
